@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>You & Me 🐱💗</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Floating hearts -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Sparkles -->
+  <div id="sparkleLayer"></div>
+
+  <!-- Navigation -->
+  <header class="topbar">
+
+    <a class="brand" href="#home">🐾 You & Me</a>
+
+    <nav>
+      <a href="#memories">Memories</a>
+      <a href="#questions">Cards</a>
+      <a href="#letter">Letter</a>
+    </nav>
+
+    <div class="controls">
+
+      <button
+        id="themeBtn"
+        class="icon-btn"
+        type="button"
+        aria-label="Toggle dark mode">
+        🌙
+      </button>
+
+      <button
+        id="musicBtn"
+        class="icon-btn"
+        type="button"
+        aria-label="Play music">
+        🎵
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <main class="page" id="home">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="eyebrow">
+        A little corner of the internet
+      </div>
+
+      <h1>You &amp; Me</h1>
+
+      <p class="subtitle">
+        Soft colors, curious cats, tiny memories,
+        and a little bit of magic. ✨
+      </p>
+
+      <div class="hero-actions">
+
+        <button
+          class="primary-btn"
+          id="letterBtn"
+          type="button">
+          💌 Open the letter
+        </button>
+
+        <a
+          class="secondary-btn"
+          href="#memories">
+          📖 Explore memories
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ANIMATED CAT SCENE -->
+    <section class="scene-card">
+
+      <div class="scene">
+
+        <div class="ground-line"></div>
+
+        <div class="heart-tails">
+          💗
+        </div>
+
+        <div class="sparkle-burst">
+          ✨
+        </div>
+
+
+        <!-- ORANGE CAT -->
+        <div class="cat-wrap cat-a">
+
+          <svg viewBox="0 0 220 140">
+
+            <ellipse
+              cx="108"
+              cy="126"
+              rx="76"
+              ry="10"
+              fill="#5B3358"
+              opacity=".12"/>
+
+            <path
+              class="tail-sway"
+              d="M40 68C16 64 2 46 6 26C8 15 19 10 24 19C19 28 20 42 33 48C44 53 49 62 40 68Z"
+              fill="#D98A50"/>
+
+            <rect
+              x="46"
+              y="86"
+              width="11"
+              height="34"
+              rx="5.5"
+              fill="#D98A50"/>
+
+            <rect
+              x="70"
+              y="88"
+              width="11"
+              height="32"
+              rx="5.5"
+              fill="#D98A50"/>
+
+            <rect
+              x="126"
+              y="88"
+              width="11"
+              height="32"
+              rx="5.5"
+              fill="#D98A50"/>
+
+            <rect
+              x="150"
+              y="86"
+              width="11"
+              height="34"
+              rx="5.5"
+              fill="#D98A50"/>
+
+            <ellipse
+              cx="108"
+              cy="80"
+              rx="70"
+              ry="34"
+              fill="#D98A50"/>
+
+            <ellipse
+              cx="150"
+              cy="94"
+              rx="19"
+              ry="15"
+              fill="#FBE3C6"/>
+
+            <circle
+              cx="177"
+              cy="52"
+              r="31"
+              fill="#DD9257"/>
+
+            <path
+              d="M156 34L149 8L173 28ZM193 30L201 6L208 32Z"
+              fill="#C57B3F"/>
+
+            <ellipse
+              cx="191"
+              cy="50"
+              rx="6.5"
+              ry="7.5"
+              fill="#7CA75C"/>
+
+            <rect
+              x="189.3"
+              y="45"
+              width="3.2"
+              height="10"
+              rx="1.6"
+              fill="#111"/>
+
+            <path
+              d="M200 58L208 58L204 64Z"
+              fill="#D8788A"/>
+
+            <path
+              d="M204 64V70C200 75 195 75 192 71"
+              fill="none"
+              stroke="#6B4438"
+              stroke-width="1.8"/>
+
+          </svg>
+
+        </div>
+
+
+        <!-- GREY CAT -->
+        <div class="cat-wrap cat-b">
+
+          <svg viewBox="0 0 220 140">
+
+            <ellipse
+              cx="108"
+              cy="126"
+              rx="76"
+              ry="10"
+              fill="#5B3358"
+              opacity=".12"/>
+
+            <path
+              class="tail-sway"
+              d="M40 68C16 64 2 46 6 26C8 15 19 10 24 19C19 28 20 42 33 48C44 53 49 62 40 68Z"
+              fill="#B7AFA9"/>
+
+            <rect
+              x="46"
+              y="86"
+              width="11"
+              height="34"
+              rx="5.5"
+              fill="#B7AFA9"/>
+
+            <rect
+              x="70"
+              y="88"
+              width="11"
+              height="32"
+              rx="5.5"
+              fill="#B7AFA9"/>
+
+            <rect
+              x="126"
+              y="88"
+              width="11"
+              height="32"
+              rx="5.5"
+              fill="#B7AFA9"/>
+
+            <rect
+              x="150"
+              y="86"
+              width="11"
+              height="34"
+              rx="5.5"
+              fill="#B7AFA9"/>
+
+            <ellipse
+              cx="108"
+              cy="80"
+              rx="70"
+              ry="34"
+              fill="#B7AFA9"/>
+
+            <circle
+              cx="177"
+              cy="52"
+              r="31"
+              fill="#C0B8B2"/>
+
+            <path
+              d="M156 34L149 8L173 28ZM193 30L201 6L208 32Z"
+              fill="#948A82"/>
+
+            <ellipse
+              cx="191"
+              cy="50"
+              rx="6.5"
+              ry="7.5"
+              fill="#C89A3E"/>
+
+            <rect
+              x="189.3"
+              y="45"
+              width="3.2"
+              height="10"
+              rx="1.6"
+              fill="#111"/>
+
+            <path
+              d="M200 58L208 58L204 64Z"
+              fill="#D8788A"/>
+
+            <path
+              d="M204 64V70C200 75 195 75 192 71"
+              fill="none"
+              stroke="#5C544D"
+              stroke-width="1.8"/>
+
+          </svg>
+
+        </div>
+
+      </div>
+
+
+      <p class="tap-hint">
+        Watch the cats wander toward each other 🐾
+      </p>
+
+      <button
+        class="paw-btn"
+        id="pawBtn"
+        type="button">
+        🐾 Make some sparkles!
+      </button>
+
+    </section>
+
+
+    <!-- LETTER PREVIEW -->
+    <section
+      class="glass-card letter-preview"
+      id="letter">
+
+      <div class="section-kicker">
+        A little note
+      </div>
+
+      <h2>
+        Something to open 💌
+      </h2>
+
+      <p>
+        This page is a small collection of playful
+        moments, questions, and memories.
+      </p>
+
+      <button
+        class="primary-btn"
+        id="letterBtn2"
+        type="button">
+        Open the letter
+      </button>
+
+    </section>
+
+
+    <!-- TIMELINE -->
+    <section
+      id="memories"
+      class="section">
+
+      <div class="section-title">
+        📖 Memories &amp; Moments
+      </div>
+
+      <p class="section-sub">
+        Replace these with your own dates,
+        photos, places, and stories.
+      </p>
+
+
+      <div class="timeline">
+
+        <article class="timeline-item">
+
+          <span class="timeline-dot">
+            🐾
+          </span>
+
+          <div class="glass-card">
+
+            <small>
+              01 · The beginning
+            </small>
+
+            <h3>
+              First little moment
+            </h3>
+
+            <p>
+              Add your first memory here —
+              a conversation, a funny moment,
+              or the day you met.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+          <span class="timeline-dot">
+            ✨
+          </span>
+
+          <div class="glass-card">
+
+            <small>
+              02 · A favorite day
+            </small>
+
+            <h3>
+              The day that made you smile
+            </h3>
+
+            <p>
+              Write a short story about a
+              favorite memory and why it matters.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+          <span class="timeline-dot">
+            🌸
+          </span>
+
+          <div class="glass-card">
+
+            <small>
+              03 · More to come
+            </small>
+
+            <h3>
+              The next chapter
+            </h3>
+
+            <p>
+              Leave this one as a future memory
+              waiting to happen.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PHOTO GALLERY -->
+    <section class="section photo-section">
+
+      <div class="section-title">
+        📸 Memory Gallery
+      </div>
+
+      <p class="section-sub">
+        Add your own images inside
+        <code>assets/images/</code>.
+      </p>
+
+
+      <div class="gallery">
+
+        <figure class="photo-card">
+
+          <img
+            src="assets/images/memory-1.jpg"
+            alt="Memory one">
+
+          <figcaption>
+            Memory One
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-card">
+
+          <img
+            src="assets/images/memory-2.jpg"
+            alt="Memory two">
+
+          <figcaption>
+            Memory Two
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-card">
+
+          <img
+            src="assets/images/memory-3.jpg"
+            alt="Memory three">
+
+          <figcaption>
+            Memory Three
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTERACTIVE CARDS -->
+    <section
+      id="questions"
+      class="section">
+
+      <div class="section-title">
+        🃏 Curious Cards
+      </div>
+
+      <p class="section-sub">
+        Tap a card to flip it.
+      </p>
+
+      <div
+        class="cards"
+        id="cardStack">
+      </div>
+
+    </section>
+
+
+    <!-- THEMES -->
+    <section class="section theme-section">
+
+      <div class="section-title">
+        🎨 Make it yours
+      </div>
+
+      <p class="section-sub">
+        Pick a theme color.
+      </p>
+
+      <div
+        class="theme-controls">
+
+        <button
+          class="theme-swatch rose"
+          data-theme="rose"
+          aria-label="Rose theme">
+        </button>
+
+        <button
+          class="theme-swatch lavender"
+          data-theme="lavender"
+          aria-label="Lavender theme">
+        </button>
+
+        <button
+          class="theme-swatch peach"
+          data-theme="peach"
+          aria-label="Peach theme">
+        </button>
+
+        <button
+          class="theme-swatch mint"
+          data-theme="mint"
+          aria-label="Mint theme">
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      Made with 🤍, paws, sparkles,
+      and a little bit of cat magic.
+    </footer>
+
+  </main>
+
+
+  <!-- SECRET LETTER -->
+  <div
+    class="modal"
+    id="letterModal"
+    aria-hidden="true">
+
+    <div
+      class="modal-backdrop"
+      data-close="true">
+    </div>
+
+    <div
+      class="letter-modal"
+      role="dialog"
+      aria-modal="true">
+
+      <button
+        class="close-btn"
+        id="closeLetter"
+        type="button">
+        ×
+      </button>
+
+      <div class="envelope-icon">
+        💌
+      </div>
+
+      <h2>
+        A little secret message
+      </h2>
+
+      <p>
+        You found the hidden letter!
+        Replace this paragraph with
+        your own message.
+      </p>
+
+      <button
+        class="primary-btn"
+        data-close="true"
+        type="button">
+        Close
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- MUSIC -->
+  <audio
+    id="bgMusic"
+    loop
+    preload="none">
+
+    <source
+      src="assets/audio/music.mp3"
+      type="audio/mpeg">
+
+  </audio>
+
+
+  <!-- Paw cursor -->
+  <div
+    id="pawCursor">
+    🐾
+  </div>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+  </html>
